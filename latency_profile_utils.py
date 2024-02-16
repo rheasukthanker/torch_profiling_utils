@@ -3,7 +3,7 @@ import torchvision.models as models
 from torch.profiler import profile, record_function, ProfilerActivity
 import numpy as np
 import torchvision.models as models
-model = models.resnet18().cuda()
+model = models.alexnet().cuda()
 inputs = torch.randn([2,3,224,224]).cuda()
 times_profiler_cpu = []
 times_profiler_gpu = []
